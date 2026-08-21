@@ -1,0 +1,38 @@
+wikipedia_tables:
+  - table: colours
+    url: https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors
+    type: simple_table
+    id: 0
+    cols:
+      Name: name
+      "Hexadecimal in their website depiction[b]": hex
+
+  - table: sandwiches
+    url: https://en.wikipedia.org/wiki/List_of_sandwiches
+    type: simple_table
+    id: 0
+    cols: {Name: name}
+
+  - table: dairy_products
+    url: https://en.wikipedia.org/wiki/List_of_dairy_products
+    type: alphabetical_table
+    cols: {Name: name}
+
+  - table: herbs_and_spices
+    url: https://en.wikipedia.org/wiki/List_of_culinary_herbs_and_spices
+    type: alphabetical_list
+
+  - table: sweet_fruits
+    url: https://en.wikipedia.org/wiki/List_of_culinary_fruits
+    type: alphabetical_table
+    cols: {"Common name": name}
+
+  - table: vegetables
+    url: https://en.wikipedia.org/wiki/List_of_vegetables
+    type: alphabetical_table
+    cols: {0: name}
+    number_index: True
+
+  - table: diseases
+    url: https://simple.wikipedia.org/wiki/List_of_diseases
+    type: alphabetical_list

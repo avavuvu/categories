@@ -1,0 +1,29 @@
+# Local Netlify folder
+.netlify
+
+scraper/raw
+scraper/raw/*
+scraper/wikipedia/cache/
+scraper/output/
+
+# Python
+**/__pycache__/
+*.py[oc]
+scraper/.venv/
+
+# Node
+**/node_modules/
+
+#  build output
+panettone/.svelte-kit/
+panettone/build/
+panettone/.output/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Sono";
+    font-weight: 400;
+    src: url("/fonts/Sono-Regular.ttf");
+}
+@font-face {
+    font-family: "Sono";
+    font-weight: 700;
+    src: url("/fonts/Sono-Bold.ttf");
+}
+
+:root {
+    --color-surface: #fcfcfc;
+    --color-muted: darkgray;
+    --color-0: #6f52a4;
+    --color-3: #d32088;
+    --color-1: #cddd32;
+    --color-2: #48aec5;
+    --color-4: #e27d2d;
+}
+
+body {
+    font-family: "Sono", "Mono";
+    background-color: var(--color-surface);
+}

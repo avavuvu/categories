@@ -1,0 +1,119 @@
+categories:
+# one column tables
+    - label: colours
+      table: colours
+      facts: as desfined by Crayola
+
+    - label: languages
+      table: languages
+
+    - label: companies
+      table: companies
+      facts: as defined by the Forbes 2000 companies, 2025
+
+    - label: personal names in the bible
+      table: bible_names
+
+    - label: US States
+      table: us_states
+
+    - label: herbs and spices
+      table: herbs_and_spices
+      facts: as defined by wikipedia
+
+    - label: dairy products
+      table: dairy_products
+      facts: as defined by wikipedia
+
+    - label: types of sandwich
+      table: sandwiches
+      facts: as defined by wikipedia
+
+    - label: vegetables
+      table: vegetables
+      facts: as defined by wikipedia
+
+    - label: sweet fruits
+      table: sweet_fruits
+      facts: as defined by wikipedia
+
+    - label: diseases
+      table: diseases
+      facts: as defined by wikipedia
+
+# countries
+    - label: countries
+      table: countries
+
+    - label: capital cities
+      table: capitol
+
+# words
+    - label: words ending in "n"
+      table: dictionary
+      query: ends_in_n = true
+      fuzzy: false
+
+    - label: four letter words
+      table: dictionary
+      query: length = 4
+      fuzzy: false
+
+    - label: six letter words
+      table: dictionary
+      query: length = 6
+      fuzzy: false
+
+    - label: words that have "ing" that don't end with "ing"
+      table: dictionary
+      query: contains_ing_not_ending_in_ing = true
+      fuzzy: false
+
+    - label: words with a double letter
+      table: dictionary
+      query: has_double_letter = true
+      fuzzy: false
+
+# people
+    - label: historical people
+      table: people
+      facts: people born before 1920
+      query: birth < 1920
+
+    - label: famous women
+      table: people
+      query: is_female = true
+
+    - label: famous men
+      table: people
+      query: is_female = false
+
+# names
+    - label: boy's name
+      table: names
+      query: gender = 'male'
+
+    - label: girl's name
+      table: names
+      query: gender = 'female'
+
+# cities
+    - label: US cities
+      table: cities
+      facts: with a population above 100,000
+      query: country = 'united states'
+
+    - label: European cities
+      table: cities
+      facts: with a population above 100,000
+      query: continent = 'europe'
+
+    - label: Asian cities
+      table: cities
+      facts: with a population above 100,000
+      query: continent = 'asia'
+
+    - label: Australian cities
+      table: cities
+      facts: with a population above 50,000
+      query: country = 'australia'

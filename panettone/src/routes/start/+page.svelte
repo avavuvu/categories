@@ -5,7 +5,7 @@
     import { onMount, tick } from 'svelte';
     import { initGame } from '$lib/game.svelte';
 
-    const GAME_DURATION_SECONDS = 10;
+    const GAME_DURATION_SECONDS = 90;
 
     let dice: Dice;
     let logo: Logo;

@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "netlify dev",
+		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@netlify/functions": "^6.0.0",
+		"@typesafe-ai/sdk": "^0.7.0",
 		"animejs": "^4.5.0",
 		"netlify-cli": "^27.1.2",
 		"postgres": "^3.4.7",
